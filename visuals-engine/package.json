@@ -1,0 +1,23 @@
+{
+  "name": "visuals-engine",
+  "version": "1.0.0",
+  "description": "High-performance WebGL VJ visual engine",
+  "main": "electron/main.js",
+  "scripts": {
+    "serve": "npx serve . -l 3000 --no-clipboard",
+    "start": "npm run serve & sleep 1 && npx electron electron/main.js",
+    "electron": "npx electron electron/main.js"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "serve": "^14.0.0"
+  },
+  "optionalDependencies": {
+    "spout2": "^1.0.0",
+    "node-syphon": "^0.3.0"
+  },
+  "comments": {
+    "spout2": "Windows only — GPU texture sharing for Resolume, MadMapper, TouchDesigner",
+    "node-syphon": "macOS only — IOSurface sharing for VDMX, CoGe, Resolume Arena"
+  }
+}
